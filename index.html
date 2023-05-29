@@ -12,23 +12,24 @@
 </head>
 
 <body>
-    <header class="cabeza-pagina">
-        <img src="imagenes/logo.png">
-    </header>
     <main class="cuerpo-pagina">
         <ul class="seccion1">
             <li class="entrada">
+                <img src="imagenes/logo.png" class="logo">
                 <textarea placeholder="Ingrese el texto aqui"></textarea>
                 <div class="botones">
-                    <label for="boton">Solo letras minusculas y sin acentos</label>
-                    <ul>
-                        <li>
+                    <div class="contenedor">
+                        <div class="label-container">
+                            <div class="circulo">
+                                <span class="exclamacion">!</span>
+                            </div>
+                            <label for="boton">Solo letras minusculas y sin acentos</label>
+                        </div>
+                        <div class="botones-container">
                             <button class="boton">Encriptar</button>
-                        </li>
-                        <li>
                             <button class="boton">Desincriptar</button>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </li>
             <li class="salida">

@@ -4,19 +4,10 @@ body {
     background: #F3F5FC;
 }
 
-.cabeza-pagina {
-    background-color: #000000;
-    padding: 20px 0;
-}
-
-.cabeza-pagina img {
-    margin: 0 5%;
-}
-
 .seccion1 {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
-    padding: 50px;
+    padding: 40px;
 }
 
 .seccion1 .entrada {
@@ -24,25 +15,33 @@ body {
     width: 60%;
     vertical-align: top;
     margin: 0 1.5%;
-    /*padding: 20% 20px;*/
-    padding-left: 2%;
-    height: 60vh;
-    /*box-sizing: border-box;
-    border: 4px solid #000000;
-    border-radius: 10px;*/
+    padding: auto 50px;
+    padding-left: 3%;
+    height: 52vh;
+
 }
-textarea{
+
+.entrada .logo {
+    width: 3vh;
+    height: auto;
+    margin: 4% 5px;
+}
+
+textarea {
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 3vh;
     font-weight: bold;
-    width: 100%;
-    height: 80%;
+    width: 90%;
+    height: 89%;
+    margin-left: 10%;
     background: #F3F5FC;
     color: #0A3871;
     border: none;
     line-height: 1.5;
+    resize: none;
 }
+
 textarea::placeholder {
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
@@ -56,12 +55,84 @@ textarea::focus {
     border: none;
 }
 
+
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.botones .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones .label-container ::before {
+    content: url("data:../imagenes/signo.png;base64");
+    width: 1vh;
+    height: 1vh;
+}
+
+.circulo {
+    width: 1.5vh;
+    height: 1.5vh;
+    border-radius: 50%;
+    background-color: #495057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.exclamacion {
+    color: #F3F5FC;
+    font-size: 1.5vh;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botones .label-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 1.5vh;
+    color: #495057;
+}
+.label-container{
+    padding: 0 0 1vh 2vw;
+}
+.botones .botones-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    padding: 1.5vh 7vw;
+    margin: 5px;
+}
+.boton:hover{
+    background: #0a3871;
+    color: #d8dfe8;
+}
+
 .seccion1 .salida {
     display: inline-block;
     width: 30%;
     vertical-align: top;
     margin: 0 1.5%;
-    height: 60vh;
+    height: 70vh;
     /*padding: 30% 20px;*/
     background: #FFFFFF;
     box-sizing: border-box;
