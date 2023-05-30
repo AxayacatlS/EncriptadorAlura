@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Montserrat:wght@300&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
+    
     <main class="cuerpo-pagina">
         <ul class="seccion1">
             <li class="entrada">
@@ -23,31 +25,33 @@
                             <div class="circulo">
                                 <span class="exclamacion">!</span>
                             </div>
-                            <label for="boton">Solo letras minusculas y sin acentos</label>
+                            <label>Solo letras minusculas y sin acentos</label>
                         </div>
                         <div class="botones-container">
-                            <button class="boton">Encriptar</button>
-                            <button class="boton">Desincriptar</button>
+                            <button id="btn-encriptar" class="boton" onclick="Encriptar()">Encriptar</button>
+                            <button id="btn-desencriptar" class="boton" onclick="Desencriptar()">Desincriptar</button>
                         </div>
                     </div>
                 </div>
             </li>
             <li id="area-salida" class="salida">
-                <div class="texto-salida">
-                    <label id="lbl-salida" class="place"><img src="imagenes/muneco.png">
-                        <h1>Ningún mensaje fue encontrado</h1><label>Ingrese el texto que desees encriptar o
-                            desencriptar</label>
+                <div id="contenedor" class="texto-salida">
+                    <label id="lbl-salida" class="place">
+                        <img src="imagenes/muneco.png">
+                        <h1>Ningún mensaje fue encontrado</h1>
+                        <label>Ingrese el texto que desees encriptar o desencriptar</label>
                     </label>
                 </div>
-                <div id="btn-copiar" class="boton-copiar">
+                <!--<div id="btn-copiar" class="boton-copiar">
                     <button class="copiar">Copiar</button>
-                </div>
+                </div>-->
             </li>
         </ul>
     </main>
     <footer class="pie-pagina">
 
     </footer>
+    <script src="scripts/criptografia.js"></script>
 </body>
 
 </html>
